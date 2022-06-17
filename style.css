@@ -1,0 +1,49 @@
+body
+{
+        background-color: steelblue;
+        margin: 07% 30%;
+        font-family: Arial, "sans serif";
+}
+h1 
+{ 
+    padding-bottom: 5%;
+    font-size: 38px;
+    color: aliceblue;
+    font-family: 'Fresca', sans-serif;
+  }
+  section 
+  {
+  padding: 10% ;
+  margin: 5%;
+  background-color: #904c77;
+  text-align: center;
+  border-radius: 20px;
+  }
+  input, 
+button {
+  margin: 2%;
+
+}
+#btn {
+  background-color: aliceblue;
+  border: 2px solid rgb(137, 241, 255);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+
+  }
+  #btn:hover
+{
+    background-color: rgb(137, 241, 255);
+    border: 2px solid rgb(137, 241, 255);
+    color: white;
+}
+
+#rules {
+  padding-top: 2%;
+  display: none;
+}
+#rules ul li {
+    text-align: left;
+    color: rgb(255, 211, 211);
+  }
