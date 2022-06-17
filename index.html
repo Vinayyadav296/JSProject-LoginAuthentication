@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+function show(id)
+{
+    if(document.getElementById(id).style.display=='none')
+    {
+        document.getElementById(id).style.display='block';
+    }
+    else
+    {
+        document.getElementById(id).style.display='none';
+    }
+}
+
+function verify()
+{
+    let username='User123';
+    let password='123Pass';
+
+    let user=document.getElementById("username").value;
+    let pass=document.getElementById("password").value;
+    if(user==username || pass==password)
+    {
+        alert("User Authenticated");
+    }
+    else
+    {
+        alert("You have entered incorrect username or password");
+    }
+}
+
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>Login Authentication</h1>
+      <form action="#" method="post" name="authentication" id="authentication">
+        <label for="username">Enter your username :</label>
+        <br>
+        <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <label for="password">Enter your password :</label>
+        <br>
+        <input type="password" name="password" id="password" minlength="6" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <input type="submit" id="btn" value="Signin" onclick="verify();"></input>
+        <button id="btn" type="button" onclick="show('rules');">Rules</button>
+      </form>
+      <div id="rules">
+               <ul>
+          <li>Username must have between 3 and 15 caracters</li>
+          <li>Password must have between 6 and 15 caracters</li>
+          <li>Username and Password required</li>
+          <li>Use only numbers and letters</li>
+          <li>Note:(username='User123'<br>password='123Pass')</li>
+        </ul>
+      </div>
+    </section>
+  </body>  
+</html>
